@@ -47,6 +47,7 @@ const paragraphStyle = {
     fontSize: '36px',
     color: '#00b7e1',
     marginBottom: '10px',
+    transform: 'scaleX(-1)',
   };
   
   const contactFlex = {
