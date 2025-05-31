@@ -66,22 +66,33 @@ Whether you are a supplier or customer, we would love to talk to you and make so
         please do contact us by clicking on the button below.<br />
         We will be sure to get back to you as soon as possible.
       </p>
-      <a
-        href="mailto:sales@maxtronicsonline.com"
-        style={{
-          backgroundColor: 'white',
-          color: '#000',
-          fontWeight: 'bold',
-          fontSize: '18px',
-          padding: '12px 30px',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          textDecoration: 'none'
-        }}
-      >
-        Email Us
-      </a>
+      <div style={{ textAlign: 'center', marginTop: '40px' }}>
+  <a
+    href="mailto:sales@maxtronicsonline.com"
+    style={{
+      display: 'inline-block',
+      padding: '10px 30px',
+      color: '#00e1ff',
+      border: '2px solid #00e1ff',
+      borderRadius: '8px',
+      fontWeight: 'bold',
+      fontSize: '18px',
+      textDecoration: 'none',
+      backgroundColor: 'transparent',
+      transition: 'background 0.3s, color 0.3s',
+    }}
+    onMouseOver={(e) => {
+      e.currentTarget.style.backgroundColor = '#00e1ff';
+      e.currentTarget.style.color = '#000';
+    }}
+    onMouseOut={(e) => {
+      e.currentTarget.style.backgroundColor = 'transparent';
+      e.currentTarget.style.color = '#00e1ff';
+    }}
+  >
+    Email Us
+  </a>
+</div>
     </div>
 </>
 );

@@ -1,21 +1,17 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../images/maxtronics logo.png'; 
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-logo">
-        <img src={logo} alt="Maxtronics Logo" className="logo" />
-      </div>
-      <div className="footer-text">
-        <p><strong>Copyright © 2017 MAXTRONICS</strong><br />ALL RIGHTS RESERVED</p>
-      </div>
-      <div className="footer-disclaimer">
-        <p>
-          LOGOS, REGISTERED TRADEMARKS AND PRODUCTS USED ON THIS WEBSITE ARE PROPERTIES OF THEIR RESPECTIVE OWNERS;
-          THEY ARE USED HERE FOR REFERENCE ONLY AND DO NOT IMPLY ANY CONNECTION OR RELATIONSHIP BETWEEN MAXTRONICS AND THESE COMPANIES.
-        </p>
+    <footer className="simple-footer">
+      <hr className="footer-line" />
+      <div className="footer-content">
+        <div className="footer-left">
+          © 2025 Maxtronics, Inc
+        </div>
+        <div className="footer-right">
+          118-21 Queens Boulevard, Suite 413, Forest Hills, NY 11375
+        </div>
       </div>
     </footer>
   );
