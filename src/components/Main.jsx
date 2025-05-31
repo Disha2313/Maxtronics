@@ -3,11 +3,6 @@ import { Carousel } from 'antd';
 import imageone from '../images/imageone.png';
 import imagetwo from '../images/imagetwo.png';
 import imagethree from '../images/imagethree.png';
-import {
-    PhoneOutlined,
-    MailOutlined,
-    EnvironmentOutlined,
-  } from '@ant-design/icons';
   import './Main.css';
 
 const contentStyle = {
@@ -18,12 +13,6 @@ const contentStyle = {
   background: '#364d79',
   width : '100%',
 };
-const contactSection = {
-    backgroundColor: 'grey',
-    color: '#000',
-    textAlign: 'center',
-    padding: '60px 20px',
-  };
 
 const paragraphStyle = {
     textAlign: 'center',
@@ -33,28 +22,6 @@ const paragraphStyle = {
     lineHeight: '1.6',
   };
 
-  const contactCard = {
-    background: '#fff',
-    padding: '30px',
-    margin: '15px',
-    borderRadius: '8px',
-    width: '300px',
-    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-
-  };
-  
-  const iconStyle = {
-    fontSize: '36px',
-    color: '#00b7e1',
-    marginBottom: '10px',
-    transform: 'scaleX(-1)',
-  };
-  
-  const contactFlex = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-  };
   
 const Main = () => (
 <>    
@@ -78,24 +45,43 @@ const Main = () => (
 Whether you are a supplier or customer, we would love to talk to you and make some deals.
 </div>
 
-<div id="contact" style={contactSection}>
-      <h2 style={{ color: '#fff', marginBottom: '40px' }}>CONTACT US</h2>
-      <div style={contactFlex}>
-        <div style={contactCard}>
-          <PhoneOutlined style={iconStyle} />
-          <p><strong>TEL:</strong> +1 (646) 830 9000</p>
-        </div>
-        <div style={contactCard}>
-          <MailOutlined style={iconStyle} />
-          <p><strong>EMAIL:</strong><br />
-            <a href="mailto:sales@maxtronicsonline.com" className="email-link">sales@maxtronicsonline.com</a>
-          </p>
-        </div>
-        <div style={contactCard}>
-          <EnvironmentOutlined style={iconStyle} />
-          <p><strong>303 Fifth Avenue, Suite 211<br />New York, NY 10016</strong></p>
-        </div>
-      </div>
+<div id="contact" style={{
+      backgroundColor: '#1f2328',
+      color: '#fff',
+      textAlign: 'center',
+      padding: '100px 20px'
+    }}>
+      <h2 style={{
+        fontSize: '40px',
+        fontWeight: 'bold',
+        marginBottom: '20px'
+      }}>Contact Us</h2>
+      <p style={{
+        fontSize: '18px',
+        color: '#b3b3b3',
+        marginBottom: '40px',
+        lineHeight: '1.6'
+      }}>
+        Whether you are a customer or a vendor,<br />
+        please do contact us by clicking on the button below.<br />
+        We will be sure to get back to you as soon as possible.
+      </p>
+      <a
+        href="mailto:sales@maxtronicsonline.com"
+        style={{
+          backgroundColor: 'white',
+          color: '#000',
+          fontWeight: 'bold',
+          fontSize: '18px',
+          padding: '12px 30px',
+          border: 'none',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          textDecoration: 'none'
+        }}
+      >
+        Email Us
+      </a>
     </div>
 </>
 );
